@@ -1,0 +1,1111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b14c1cb31ede143eead3283ccb9ad8c4, type: 3}
+  m_Name: Spawn_Point_Collection_0
+  m_EditorClassIdentifier: 
+  Collection:
+    Name: New_Collection
+    _points:
+    - id: 0
+      Name: _0
+      identityType: 1
+      IsSelected: 0
+      IsDisplayingHandles: 1
+      Position: {x: 145.95135, y: 0, z: 688.81635}
+      Rotation: {x: 0, y: 0, z: 0}
+      IsDisplayingMesh: 0
+      ColorGizmo: {r: 0, g: 1, b: 0, a: 1}
+      IsDisplayingGizmo: 1
+      IsDisplayingLabel: 0
+      MoveOnlySelf: 1
+      Paths:
+      - id: 0
+        Name: Path_0
+        identityType: 2
+        IsSelected: 0
+        IsDisplayingHandles: 1
+        PathColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+        IsDisplayingGizmo: 1
+        IsDisplayingLabel: 0
+        Foldout: 1
+        Points:
+        - id: 0
+          Name: _0
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 85.31156, y: 0, z: 723.091}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 1
+          Name: _1
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 24.671768, y: 0, z: 738.9101}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 2
+          Name: _2
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: -30.695, y: 0, z: 731.00055}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 3
+          Name: _3
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: -83.425255, y: 0, z: 704.6354}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 4
+          Name: _4
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: -139.70619, y: 0, z: 650.18286}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 5
+          Name: _5
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: -159.88412, y: 0, z: 585.9924}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 6
+          Name: _6
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: -143.2569, y: 0, z: 541.17163}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 7
+          Name: _7
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: -83.425255, y: 0, z: 501.62393}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 8
+          Name: _8
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: -12.239411, y: 0, z: 488.44138}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 9
+          Name: _9
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 111.67669, y: 0, z: 469.98578}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 10
+          Name: _10
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 164.40694, y: 0, z: 443.62067}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 11
+          Name: _11
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 167.04346, y: 0, z: 396.16345}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 12
+          Name: _12
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 130.13228, y: 0, z: 340.7967}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 13
+          Name: _13
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 69.492485, y: 0, z: 317.06805}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 14
+          Name: _14
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 11.4892025, y: 0, z: 306.522}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 15
+          Name: _15
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: -72.8792, y: 0, z: 301.249}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 16
+          Name: _16
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: -146.70157, y: 0, z: 309.1585}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+    - id: 6
+      Name: _6
+      identityType: 1
+      IsSelected: 0
+      IsDisplayingHandles: 0
+      Position: {x: 241.68987, y: 0, z: 276.92142}
+      Rotation: {x: 0, y: 0, z: 0}
+      IsDisplayingMesh: 0
+      ColorGizmo: {r: 0, g: 1, b: 0, a: 1}
+      IsDisplayingGizmo: 0
+      IsDisplayingLabel: 0
+      MoveOnlySelf: 1
+      Paths:
+      - id: 0
+        Name: Path_0
+        identityType: 2
+        IsSelected: 0
+        IsDisplayingHandles: 1
+        PathColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+        IsDisplayingGizmo: 1
+        IsDisplayingLabel: 0
+        Foldout: 0
+        Points:
+        - id: 0
+          Name: _0
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 241.68987, y: 0, z: 295.94012}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 1
+          Name: _1
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 241.68987, y: 0, z: 311.78906}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 2
+          Name: _2
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 241.68987, y: 0, z: 368.84518}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 3
+          Name: _3
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 241.68987, y: 0, z: 400.54306}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 4
+          Name: _4
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 241.68987, y: 0, z: 444.92004}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 5
+          Name: _5
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 235.3503, y: 0, z: 517.82513}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 6
+          Name: _6
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 235.3503, y: 0, z: 543.18335}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 7
+          Name: _7
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 232.18051, y: 0, z: 590.73016}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 8
+          Name: _8
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 232.18051, y: 0, z: 641.4467}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 9
+          Name: _9
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 229.01073, y: 0, z: 730.2007}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 10
+          Name: _10
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 273.3877, y: 0, z: 739.7101}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 11
+          Name: _11
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 327.27405, y: 0, z: 736.5402}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 12
+          Name: _12
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 397.0093, y: 0, z: 720.69135}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 13
+          Name: _13
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 425.53738, y: 0, z: 708.0122}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 14
+          Name: _14
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 450.89566, y: 0, z: 669.9748}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 15
+          Name: _15
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 460.405, y: 0, z: 619.2582}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 16
+          Name: _16
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 428.70715, y: 0, z: 565.3719}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 17
+          Name: _17
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 374.82083, y: 0, z: 546.35315}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 18
+          Name: _18
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 324.10425, y: 0, z: 546.35315}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 19
+          Name: _19
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 267.04813, y: 0, z: 552.69275}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+    - id: 7
+      Name: _7
+      identityType: 1
+      IsSelected: 0
+      IsDisplayingHandles: 0
+      Position: {x: 514.2914, y: 0, z: 257.9027}
+      Rotation: {x: 0, y: 0, z: 0}
+      IsDisplayingMesh: 0
+      ColorGizmo: {r: 0, g: 1, b: 0, a: 1}
+      IsDisplayingGizmo: 0
+      IsDisplayingLabel: 0
+      MoveOnlySelf: 1
+      Paths:
+      - id: 0
+        Name: Path_0
+        identityType: 2
+        IsSelected: 0
+        IsDisplayingHandles: 1
+        PathColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+        IsDisplayingGizmo: 1
+        IsDisplayingLabel: 0
+        Foldout: 0
+        Points:
+        - id: 0
+          Name: _0
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 514.2914, y: 0, z: 257.9027}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 1
+          Name: _1
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 545.9892, y: 0, z: 346.65668}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 2
+          Name: _2
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 574.5173, y: 0, z: 413.2222}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 3
+          Name: _3
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 596.70575, y: 0, z: 470.27832}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 4
+          Name: _4
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 622.064, y: 0, z: 527.3345}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 5
+          Name: _5
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 644.25256, y: 0, z: 574.8812}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 6
+          Name: _6
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 666.44104, y: 0, z: 644.61646}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 7
+          Name: _7
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 720.32733, y: 0, z: 711.18195}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 8
+          Name: _8
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 752.0252, y: 0, z: 708.0122}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 9
+          Name: _9
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 783.723, y: 0, z: 679.48413}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 10
+          Name: _10
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 809.0813, y: 0, z: 612.91864}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 11
+          Name: _11
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 824.9303, y: 0, z: 555.8625}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 12
+          Name: _12
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 843.94904, y: 0, z: 505.14597}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 13
+          Name: _13
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 859.798, y: 0, z: 454.4294}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 14
+          Name: _14
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 875.64685, y: 0, z: 403.7128}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 15
+          Name: _15
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 888.326, y: 0, z: 346.65668}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 16
+          Name: _16
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 907.34467, y: 0, z: 283.261}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 17
+          Name: _17
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 916.85406, y: 0, z: 251.56314}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 18
+          Name: _18
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 859.798, y: 0, z: 245.22357}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 19
+          Name: _19
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 812.25116, y: 0, z: 346.65668}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 20
+          Name: _20
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 783.723, y: 0, z: 419.56177}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 21
+          Name: _21
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 767.87415, y: 0, z: 467.10855}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 22
+          Name: _22
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 688.6295, y: 0, z: 489.29703}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 23
+          Name: _23
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 675.9504, y: 0, z: 463.93875}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 24
+          Name: _24
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 656.93164, y: 0, z: 425.90134}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 25
+          Name: _25
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 628.40356, y: 0, z: 378.35452}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 26
+          Name: _26
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 612.5547, y: 0, z: 340.3171}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 27
+          Name: _27
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 587.1964, y: 0, z: 299.10992}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 28
+          Name: _28
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 565.00793, y: 0, z: 270.58185}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+    - id: 8
+      Name: _8
+      identityType: 1
+      IsSelected: 0
+      IsDisplayingHandles: 0
+      Position: {x: 980.24976, y: 0, z: 711.18195}
+      Rotation: {x: 0, y: 0, z: 0}
+      IsDisplayingMesh: 0
+      ColorGizmo: {r: 0, g: 1, b: 0, a: 1}
+      IsDisplayingGizmo: 0
+      IsDisplayingLabel: 0
+      MoveOnlySelf: 1
+      Paths:
+      - id: 0
+        Name: Path_0
+        identityType: 2
+        IsSelected: 1
+        IsDisplayingHandles: 1
+        PathColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+        IsDisplayingGizmo: 1
+        IsDisplayingLabel: 0
+        Foldout: 0
+        Points:
+        - id: 0
+          Name: _0
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 986.58936, y: 0, z: 682.65393}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 1
+          Name: _1
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1015.11743, y: 0, z: 638.2769}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 2
+          Name: _2
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1040.4757, y: 0, z: 616.08844}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 3
+          Name: _3
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1056.3246, y: 0, z: 574.8812}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 4
+          Name: _4
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1075.3433, y: 0, z: 527.3345}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 5
+          Name: _5
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1084.8527, y: 0, z: 486.12726}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 6
+          Name: _6
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1100.7015, y: 0, z: 438.58047}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 7
+          Name: _7
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1116.5505, y: 0, z: 391.03366}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 8
+          Name: _8
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1135.5692, y: 0, z: 343.4869}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 9
+          Name: _9
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1154.588, y: 0, z: 292.77036}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 10
+          Name: _10
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1167.2671, y: 0, z: 267.41208}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 11
+          Name: _11
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1195.7952, y: 0, z: 362.5056}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 12
+          Name: _12
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1205.3046, y: 0, z: 413.2222}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 13
+          Name: _13
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1217.9836, y: 0, z: 470.27832}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 14
+          Name: _14
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1237.0023, y: 0, z: 549.52295}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 15
+          Name: _15
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1252.8512, y: 0, z: 616.08844}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 16
+          Name: _16
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1271.87, y: 0, z: 679.48413}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 17
+          Name: _17
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1287.7189, y: 0, z: 669.9748}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 18
+          Name: _18
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1297.2283, y: 0, z: 625.5978}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 19
+          Name: _19
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1313.0771, y: 0, z: 562.2021}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 20
+          Name: _20
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1325.7562, y: 0, z: 511.48553}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 21
+          Name: _21
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1354.2844, y: 0, z: 432.2409}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 22
+          Name: _22
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1363.7937, y: 0, z: 394.2035}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 23
+          Name: _23
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1379.6427, y: 0, z: 362.5056}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 24
+          Name: _24
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1392.3219, y: 0, z: 321.29843}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 25
+          Name: _25
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1408.1708, y: 0, z: 286.4308}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 26
+          Name: _26
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1436.6987, y: 0, z: 359.33582}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 27
+          Name: _27
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1449.3779, y: 0, z: 451.2596}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 28
+          Name: _28
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1452.5476, y: 0, z: 517.82513}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 29
+          Name: _29
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1474.7362, y: 0, z: 571.7114}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 30
+          Name: _30
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1500.0945, y: 0, z: 663.63525}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 31
+          Name: _31
+          identityType: 3
+          IsSelected: 1
+          IsDisplayingHandles: 1
+          Position: {x: 1506.4341, y: 0, z: 708.0122}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+    - id: 9
+      Name: _9
+      identityType: 1
+      IsSelected: 1
+      IsDisplayingHandles: 0
+      Position: {x: 1566.66, y: 0, z: 270.58185}
+      Rotation: {x: 0, y: 0, z: 0}
+      IsDisplayingMesh: 0
+      ColorGizmo: {r: 0, g: 1, b: 0, a: 1}
+      IsDisplayingGizmo: 0
+      IsDisplayingLabel: 0
+      MoveOnlySelf: 1
+      Paths:
+      - id: 0
+        Name: Path_0
+        identityType: 2
+        IsSelected: 1
+        IsDisplayingHandles: 1
+        PathColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+        IsDisplayingGizmo: 1
+        IsDisplayingLabel: 0
+        Foldout: 0
+        Points:
+        - id: 0
+          Name: _0
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1572.9995, y: 0, z: 330.80777}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 1
+          Name: _1
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1563.4901, y: 0, z: 403.7128}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 2
+          Name: _2
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1572.9995, y: 0, z: 470.27832}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 3
+          Name: _3
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1572.9995, y: 0, z: 530.5043}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 4
+          Name: _4
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1576.1694, y: 0, z: 581.22076}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 5
+          Name: _5
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1576.1694, y: 0, z: 622.428}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 6
+          Name: _6
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1576.1694, y: 0, z: 666.805}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 7
+          Name: _7
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1576.1694, y: 0, z: 711.18195}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 8
+          Name: _8
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1620.5463, y: 0, z: 682.65393}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 9
+          Name: _9
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1645.9045, y: 0, z: 644.61646}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 10
+          Name: _10
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1664.9233, y: 0, z: 606.57904}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 11
+          Name: _11
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1690.2816, y: 0, z: 555.8625}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 12
+          Name: _12
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1728.3191, y: 0, z: 476.6179}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 13
+          Name: _13
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1747.3376, y: 0, z: 438.58047}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 14
+          Name: _14
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1763.1865, y: 0, z: 406.88263}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 15
+          Name: _15
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1779.0356, y: 0, z: 372.01495}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 16
+          Name: _16
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1794.8845, y: 0, z: 337.14734}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 17
+          Name: _17
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1804.3939, y: 0, z: 429.07114}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 18
+          Name: _18
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1804.3939, y: 0, z: 482.95746}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 19
+          Name: _19
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1794.8845, y: 0, z: 555.8625}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 20
+          Name: _20
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1791.7147, y: 0, z: 600.2395}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 21
+          Name: _21
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1788.5448, y: 0, z: 638.2769}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 22
+          Name: _22
+          identityType: 3
+          IsSelected: 0
+          IsDisplayingHandles: 1
+          Position: {x: 1775.8657, y: 0, z: 685.82367}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+        - id: 23
+          Name: _23
+          identityType: 3
+          IsSelected: 1
+          IsDisplayingHandles: 1
+          Position: {x: 1775.8657, y: 0, z: 723.8611}
+          Rotation: {x: 0, y: 0, z: 0}
+          IsDisplayingMesh: 0
+  KeyCodeAddSpawnPoint: 98
+  KeyCodeAddPath: 110
+  KeyCodeAddPathPoint: 109
+  KeyCodeDelete: 127

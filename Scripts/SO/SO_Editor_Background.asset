@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9d48ed4321aacc44b6619ccf8ae5ecb, type: 3}
+  m_Name: SO_Editor_Background
+  m_EditorClassIdentifier: 
+  BackgroundColor: {r: 70, g: 70, b: 70, a: 1}
+  GridSmallColor: {r: 202, g: 202, b: 202, a: 1}
+  GridLargeColor: {r: 43, g: 43, b: 43, a: 1}
+  SelectionBoxColor: {r: 10, g: 10, b: 10, a: 0.2}
