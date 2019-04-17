@@ -13,5 +13,6 @@ You should set this by going to Edit->Project Settings->Player
 Project has a documentation folder with a manual and API documentation
 generated with Doxygen.
 
-![alt text](https://drive.google.com/open?id=15f0xE0j6a7NbTrrdNlJBCsamESbGwMGj)
-![alt text](https://drive.google.com/open?id=1MVkDPe22AQM1jVIwOf_rqfjVZRP1jIYJ)
+![alt text](Documentation/IMG_Graph.JPG)
+
+![alt text](Documentation/IMG_Scene.JPG)
