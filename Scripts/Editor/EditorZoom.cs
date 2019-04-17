@@ -80,7 +80,7 @@ namespace UUtils.Utilities
         /// </summary>
         public void ZoomIn()
         {
-            if (zoomValue > 1)
+            if (CanZoomIn())
             {
                 zoomTotal--;
                 UpdateZoom();
@@ -101,11 +101,21 @@ namespace UUtils.Utilities
         /// </summary>
         public void ZoomOut()
         {
-            if (zoomTotal < zoomTotalMax)
+            if (CanZoomOut())
             {
                 zoomTotal++;
                 UpdateZoom();
             }
+        }
+
+        public bool CanZoomIn()
+        {
+            return zoomTotal > 1;
+        }
+
+        public bool CanZoomOut()
+        {
+            return zoomTotal < zoomTotalMax;
         }
 
         private void UpdateZoom()

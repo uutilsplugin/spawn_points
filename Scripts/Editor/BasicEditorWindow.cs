@@ -327,6 +327,22 @@ namespace UUtils.Utilities
         {
             int _sign = (int)Mathf.Sign(_scroll);
 
+            if(_sign > 0)
+            {
+                if (!editorZoom.CanZoomOut())
+                {
+                    return;
+                }
+            }
+
+            else
+            {
+                if (!editorZoom.CanZoomIn())
+                {
+                    return;
+                }
+            }
+
             editorZoom.OnMouseScrollZoom(_sign);
 
             // Mouse position if measured from window center
