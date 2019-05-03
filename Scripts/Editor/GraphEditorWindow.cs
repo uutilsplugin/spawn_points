@@ -17,11 +17,11 @@ namespace UUtils.Utilities.Graphs
         /// <summary>
         /// X => horizontal (x), Z => vertical (y)
         /// </summary>
-        Top,
+        Top_XZ,
         /// <summary>
         /// Z => horizontal (x), Y => vertical (y)
         /// </summary>
-        Right
+        Right_ZY
     }
 
     [Serializable]
@@ -325,17 +325,29 @@ namespace UUtils.Utilities.Graphs
         {
             base.OnDrawAfterInterfaceMoveLine();
 
+            EditorGUILayout.BeginHorizontal();
+
+            EditorStatics.CreateLabelField("Display", string.Empty, EditorStatics.Width_70);
+
             viewType = (ViewType)EditorGUILayout.EnumPopup(
                 string.Empty,
                 viewType,
                 EditorStatics.Width_90
             );
 
+            EditorGUILayout.EndHorizontal();
+
+            EditorGUILayout.BeginHorizontal();
+
+            EditorStatics.CreateLabelField("Perspective", string.Empty, EditorStatics.Width_70);
+
             perspectiveType = (PerspectiveType)EditorGUILayout.EnumPopup(
                 string.Empty,
                 perspectiveType,
                 EditorStatics.Width_90
             );
+
+            EditorGUILayout.EndHorizontal();
         }
 
         #endregion View
@@ -795,7 +807,7 @@ namespace UUtils.Utilities.Graphs
         {
             Vector3 _position = new Vector3(0, 0, 0);
 
-            if(PerspectiveType == PerspectiveType.Top)
+            if(PerspectiveType == PerspectiveType.Top_XZ)
             {
                 _position.x = ApplyUnits(ApplyZoom(_mousePosition.x - intersection.x - editorBackground.Offset.x, false), false);
                 _position.z = -ApplyUnits(ApplyZoom(_mousePosition.y - intersection.y - editorBackground.Offset.y, false), false);
@@ -821,7 +833,7 @@ namespace UUtils.Utilities.Graphs
         protected void RefGetPosition(ref Vector2 _vector, Vector3 _position)
         {
             /// X => horizontal (x), Z => vertical (y)
-            if (perspectiveType == PerspectiveType.Top)
+            if (perspectiveType == PerspectiveType.Top_XZ)
             {
                 // Apply zoom to current point, unit offset distance and current move offset to get correct distance from intersection
                 _vector.x = ApplyUnits(ApplyZoom(_position.x, true), true) + intersection.x + editorBackground.Offset.x;
@@ -912,7 +924,7 @@ namespace UUtils.Utilities.Graphs
 
             GUILayout.BeginArea(rectMouseBox, "MOUSE POSITION",GUI.skin.GetStyle("Window"));
 
-            if (PerspectiveType == PerspectiveType.Top)
+            if (PerspectiveType == PerspectiveType.Top_XZ)
             {
                 string _text = string.Format(
                     "X: ({0})   Z: ({1})",

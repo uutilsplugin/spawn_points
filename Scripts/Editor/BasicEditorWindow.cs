@@ -157,6 +157,8 @@ namespace UUtils.Utilities
 
             ProcessKeyBoardInput(Event.current);
 
+            ProcessKeyboardEvents(Event.current);
+
             ProcessEvents(Event.current);
 
             OnBeforeSelectionBox(Event.current);
@@ -426,6 +428,15 @@ namespace UUtils.Utilities
         }
 
         /// <summary>
+        /// Override to insert methods which check for keyboard events
+        /// </summary>
+        /// <param name="_event"></param>
+        protected virtual void ProcessKeyboardEvents(Event _event)
+        {
+
+        }
+
+        /// <summary>
         /// Processes keyboard input to check when any keyboard key was released and then passes
         /// that key to OnKeyboardKeyReleased() along with current mouse position
         /// </summary>
@@ -517,7 +528,7 @@ namespace UUtils.Utilities
             DrawInterfaceMove();
             EditorGUILayout.EndVertical();
 
-            EditorGUILayout.BeginVertical(GUI.skin.GetStyle("Box"), new GUILayoutOption[] { GUILayout.Width(105) });
+            EditorGUILayout.BeginVertical(GUI.skin.GetStyle("Box"), new GUILayoutOption[] { GUILayout.Width(180) });
             OnDrawAfterInterfaceMoveLine();
             EditorGUILayout.EndVertical();
 

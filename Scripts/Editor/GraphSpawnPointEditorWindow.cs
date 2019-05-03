@@ -7,7 +7,6 @@ using UUtils.Utilities;
 
 namespace UUtils.SpawnPoints
 {
-    [Serializable]
     enum IdentityUIState
     {
         None,
@@ -16,6 +15,17 @@ namespace UUtils.SpawnPoints
         AddPathPoint,
         Remove,
         MeasureDistance
+    }
+
+    /// <summary>
+    /// Which axis to lock point when moving
+    /// </summary>
+    enum Lock
+    {
+        None,
+        X,
+        Y,
+        Z
     }
 
     public class GraphSpawnPointEditorWindow : GraphEditorWindow, ISerializationCallbackReceiver
@@ -69,6 +79,15 @@ namespace UUtils.SpawnPoints
         private Vector3 refPositionVector;
 
         #endregion Drag
+
+        ////////////////////////////////////////////////////////////////////////
+
+        #region Lock
+
+        [SerializeField]
+        private Lock lockAxis = Lock.None;
+
+        #endregion Lock
 
         ////////////////////////////////////////////////////////////////////////
 
@@ -324,7 +343,97 @@ namespace UUtils.SpawnPoints
 
         ////////////////////////////////////////////////////////////////////////
 
+        #region Lock Axis
+
+        /// <summary>
+        /// Add lock axis dropdown after view selection
+        /// </summary>
+        protected override void OnDrawAfterInterfaceMoveLine()
+        {
+            base.OnDrawAfterInterfaceMoveLine();
+
+            EditorGUILayout.BeginHorizontal();
+
+            EditorStatics.CreateLabelField(
+                "Lock Axis", 
+                "Dragged point will only be moved on the selected axis.", 
+                EditorStatics.Width_70
+            );
+
+            lockAxis = (Lock)EditorGUILayout.EnumPopup(
+                string.Empty,
+                lockAxis,
+                EditorStatics.Width_90
+            );
+
+            EditorGUILayout.EndHorizontal();
+        }
+
+        /// <summary>
+        /// Get new point position with axis locked to old position value
+        /// </summary>
+        /// <param name="_oldPosition">Point position before dragging</param>
+        /// <param name="_newPosition">Locked axis will be modified to return _oldPosition axis value</param>
+        /// <returns></returns>
+        private Vector3 GetAxisLockedPosition(Vector3 _oldPosition, Vector3 _newPosition)
+        {
+            switch (lockAxis)
+            {
+                case Lock.None:
+                    return _newPosition;
+                case Lock.X:
+                    _newPosition.y = _oldPosition.y;
+                    _newPosition.z = _oldPosition.z;
+                    return _newPosition;
+                case Lock.Y:
+                    _newPosition.x = _oldPosition.x;
+                    _newPosition.z = _oldPosition.z;
+                    return _newPosition;
+                case Lock.Z:
+                    _newPosition.x = _oldPosition.x;
+                    _newPosition.y = _oldPosition.y;
+                    return _newPosition;
+            }
+
+            return Vector3.zero;
+        }
+
+        /// <summary>
+        /// Process keyboard down event to enable/disable lock axis
+        /// </summary>
+        /// <param name="_event"></param>
+        private void ProcessKeyboardLockAxis(Event _event)
+        {
+            if (_event.type == EventType.KeyDown && _event.keyCode == KeyCode.X)
+            {
+                _event.Use();
+                lockAxis = lockAxis == Lock.X ? Lock.None : Lock.X;
+            }
+
+            if (_event.type == EventType.KeyDown && _event.keyCode == KeyCode.Y)
+            {
+                _event.Use();
+                lockAxis = lockAxis == Lock.Y ? Lock.None : Lock.Y;
+            }
+
+            if (_event.type == EventType.KeyDown && _event.keyCode == KeyCode.Z)
+            {
+                _event.Use();
+                lockAxis = lockAxis == Lock.Z ? Lock.None : Lock.Z;
+            }
+        }
+
+        #endregion Lock Axis
+
+        ////////////////////////////////////////////////////////////////////////
+
         #region Process
+
+        protected override void ProcessKeyboardEvents(Event _event)
+        {
+            base.ProcessKeyboardEvents(_event);
+            ProcessKeyboardLockAxis(_event);
+        }
 
         protected override void OnBeforeSelectionBox(Event _event)
         {
@@ -432,18 +541,29 @@ namespace UUtils.SpawnPoints
         /// <param name="_event">Event.</param>
         private bool ProcessHandlesSpawnPoint(SpawnPoint _point, Event _event)
         {
-            bool dragHandle = CanDragSpawnPointHandle(_event.mousePosition) && (_point.MouseOverRect(_event.mousePosition) || _point.IsSelected);
-            if (dragHandle)
+            bool _dragHandle = CanDragSpawnPointHandle(_event.mousePosition);
+            bool _selected = (_point.MouseOverRect(_event.mousePosition) && GetSelectedIdentity() == null) || _point.IsSelected;
+            if (_dragHandle && _selected)
             {
                 spawnpointID = _point.ID;
                 if (!_point.MoveOnlySelf)
                 {
-                    _point.OnSpawnPointUpdatePosition(GetRealPosition(_event.mousePosition - mouseDistanceToSelected, _point.Position));
+                    _point.OnSpawnPointUpdatePosition(
+                        GetAxisLockedPosition(
+                            _point.Position,
+                            GetRealPosition(_event.mousePosition - mouseDistanceToSelected, _point.Position)
+                        )
+                    );
                 }
 
                 else
                 {
-                    _point.UpdatePosition(GetRealPosition(_event.mousePosition - mouseDistanceToSelected, _point.Position));
+                    _point.UpdatePosition(
+                        GetAxisLockedPosition(
+                            _point.Position,
+                            GetRealPosition(_event.mousePosition - mouseDistanceToSelected, _point.Position)
+                        )
+                    );
                 }
 
                 return true;
@@ -454,14 +574,20 @@ namespace UUtils.SpawnPoints
 
         private bool ProcessHandlePath(SpawnPoint _spawnPoint, Path _path, Event _event)
         {
-            // Or (||) because editor window can sometimes be updated too late 
             // and drag will be canceled because its position isn't updated as fast as needed 
-            bool dragHandle = CanDragPathHandle(_event.mousePosition) && (_path.MouseOverRect(_event.mousePosition) || _path.IsSelected);
-            if (dragHandle)
+            bool _dragHandle = CanDragPathHandle(_event.mousePosition);
+            bool _selected = (_path.MouseOverRect(_event.mousePosition) && GetSelectedIdentity() == null) || _path.IsSelected;
+            if (_dragHandle && _selected)
             {
                 pathID = _path.ID;
                 // Move every point in the path when path is dragged.
-                _path.OnPathUpdatePosition(GetRealPosition(_event.mousePosition - mouseDistanceToSelected, _path.GetZeroPointPosition()));
+                _path.OnPathUpdatePosition(
+                    GetAxisLockedPosition(
+                        _path.GetZeroPointPosition(),
+                        GetRealPosition(_event.mousePosition - mouseDistanceToSelected, _path.GetZeroPointPosition())
+                    )
+                );
+
 
                 return true;
             }
@@ -471,11 +597,17 @@ namespace UUtils.SpawnPoints
 
         private bool ProcessHandlesPathPoint(SpawnPoint _spawnPoint, Path _path, PathPoint _point, Event _event)
         {
-            bool dragHandle = CanDragPathPointHandle(_event.mousePosition) && (_point.MouseOverRect(_event.mousePosition) || _point.IsSelected);
-            if (dragHandle)
+            bool _dragHandle = CanDragPathPointHandle(_event.mousePosition);
+            bool _selected = (_point.MouseOverRect(_event.mousePosition) && GetSelectedIdentity() == null) || _point.IsSelected;
+            if (_dragHandle && _selected)
             {
                 pathpointID = _point.ID;
-                _point.UpdatePosition(GetRealPosition(_event.mousePosition - mouseDistanceToSelected, _point.Position));
+                _point.UpdatePosition(
+                    GetAxisLockedPosition(
+                        _point.Position,
+                        GetRealPosition(_event.mousePosition - mouseDistanceToSelected, _point.Position)
+                    )
+                );
 
                 return true;
             }

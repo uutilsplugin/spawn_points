@@ -32,10 +32,8 @@ namespace UUtils.Utilities
         public void DrawWindowBackground(Rect _windowRect)
         {
             DrawColorBG(_windowRect);
-            DrawGrid(10.0001f, 0.1f, gridSmallColor, _windowRect);
             DrawGrid(10, 0.1f, gridSmallColor, _windowRect);
             DrawGrid(100, 0.7f, gridLargeColor, _windowRect);
-            DrawGrid(100.01f, 0.7f, gridLargeColor, _windowRect);
         }
 
         /// <summary>
